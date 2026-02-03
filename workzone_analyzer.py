@@ -32,7 +32,6 @@ class WorkzoneAnalyzer:
             for file in files:
                 full_path = os.path.join(root, file)
                 
-                # Metadata
                 if file == 'export_data' or file == 'export_metadata.json':
                     self.data['metadata'] = self.load_json(full_path)
                 
@@ -143,7 +142,6 @@ class WorkzoneAnalyzer:
 
 def main():
     if len(sys.argv) < 2:
-        print("Gebruik: python workzone_analyzer.py <export_file.zip>")
         return
 
     zip_file = sys.argv[1]
