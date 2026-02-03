@@ -54,10 +54,12 @@ class WorkzoneAnalyzer:
                     if isinstance(content, list): self.data['roles'].extend(content)
 
     def extract_zip_recursive(self, zip_path, extract_to):
-        print(f"📦 Unzipping: {os.path.basename(zip_path)}")
+        print(f"Unzipping {os.path.basename(zip_path)}")
+
         with zipfile.ZipFile(zip_path, 'r') as zip_ref:
             zip_ref.extractall(extract_to)
-        
+        print(f"Unzipped {os.path.basename(zip_path)}")
+
         for root, _, files in os.walk(extract_to):
             for file in files:
                 if file.endswith('.zip'):
@@ -87,11 +89,11 @@ class WorkzoneAnalyzer:
         all_referenced_viz = set()
         
         for sp in self.data['spaces']:
-            # Alleen 'master' of 'en' taal pakken voor overzicht
+            #enkel master f EN voor overview
             if sp.get('language') not in ['master', 'en']: continue
             
             space_node = {
-                "space_title": sp.get('mergedEntity', {}).get('title', 'Unknown'),
+                "space_title": sp.get('mergedEntity', {}).get('value', {}).get('title', 'Unknown'),
                 "space_id": sp.get('id'),
                 "pages": []
             }
@@ -153,28 +155,10 @@ def main():
     
     report = analyzer.generate_report()
 
-    print("\n" + "="*50)
-    print("SAP WORKZONE HIERARCHY OVERVIEW")
-    print("="*50)
-    
-    for space in report["structure"]:
-        print(f"\n🏠 SPACE: {space['space_title']}")
-        print(f"   ID: {space['space_id']}")
-        for page in space["pages"]:
-            print(f"   └── 📄 PAGE: {page['page_title']}")
-            print(f"       ID: {page['page_id']}")
-            for viz in page["visualizations"]:
-                print(f"       ├── 🎨 VIZ: {viz}")
-
-    print("\n" + "="*50)
-    print("STATISTIEKEN")
-    print("="*50)
-    for k, v in report["statistics"].items():
-        print(f"{k.replace('_', ' ').title()}: {v}")
+  
 
     with open('workzone_full_report.json', 'w', encoding='utf-8') as f:
         json.dump(report, f, indent=2)
-    print(f"\nVolledig rapport opgeslagen in: workzone_full_report.json")
 
 if __name__ == "__main__":
     main()
