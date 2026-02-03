@@ -1,0 +1,1 @@
+{"id":"WZ_LOCAL_DMS_ADMIN","relations":{"businessapp":["sdm-web_com.sap.ecm.sdm.mobonboard","sdm-web_com.sap.ecm.sdm.user","sdm-web_com.sap.ecm.sdm.admin"],"sitereferences":["sitereferences.default"],"space":["c4b665b8-ac51-49a8-9a58-a3e1136788bd"]}}
