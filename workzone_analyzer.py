@@ -35,7 +35,6 @@ class WorkzoneAnalyzer:
                 if file == 'export_data' or file == 'export_metadata.json':
                     self.data['metadata'] = self.load_json(full_path)
                 
-                # Content Agent Files
                 if file == '1_DataFile_SP.json':
                     self.data['spaces'] = self.load_json(full_path)
                 elif file == '1_DataFile_WPV.json':
@@ -45,7 +44,6 @@ class WorkzoneAnalyzer:
                 elif file == '1_DataFile_WP-VZ.json':
                     self.data['relations_wp_vz'] = self.load_json(full_path)
                 
-                # Sub-account entities
                 elif 'businessapp' in root.lower() and file.endswith('.json'):
                     content = self.load_json(full_path)
                     if isinstance(content, list): self.data['business_apps'].extend(content)
@@ -75,21 +73,17 @@ class WorkzoneAnalyzer:
             "roles_analysis": []
         }
 
-        # 1. Map Workpages aan hun Visualizations (Apps)
         wp_viz_map = defaultdict(list)
         for rel in self.data['relations_wp_vz']:
             wp_viz_map[rel.get('workPageId')].append(rel.get('visualizationId'))
 
-        # 2. Map Spaces aan hun Workpages
         sp_wp_map = defaultdict(list)
         for rel in self.data['relations_sp_wp']:
             sp_wp_map[rel.get('spaceId')].append(rel.get('workPageId'))
 
-        # 3. Bouw de boomstructuur: Space -> Page -> Viz
         all_referenced_viz = set()
         
         for sp in self.data['spaces']:
-            #enkel master f EN voor overview
             if sp.get('language') not in ['master', 'en']: continue
             
             space_node = {
@@ -99,12 +93,10 @@ class WorkzoneAnalyzer:
             }
 
             for wp_id in sp_wp_map.get(sp.get('id'), []):
-                # Zoek de workpage details
                 wp_details = next((w for w in self.data['workpages'] if w.get('id') == wp_id), {})
                 viz_ids = wp_viz_map.get(wp_id, [])
                 all_referenced_viz.update(viz_ids)
 
-                #verwijder alles na de #, anders sommige ids niet valid en dus moeilijker om op te zoeken. Als dit error geeft, verwijder 2 onderste lijnen.
                 cleaned_viz_ids = [vid.split('#')[0] for vid in viz_ids]
                 all_referenced_viz.update(cleaned_viz_ids)
                 space_node["pages"].append({
@@ -115,27 +107,35 @@ class WorkzoneAnalyzer:
             
             report["structure"].append(space_node)
 
-        # 4. Roles Analyse
         for role in self.data['roles']:
-            role_id = role.get('cdm', {}).get('identification', {}).get('id')
-            provider = role.get('cdm', {}).get('identification', {}).get('providerId')
-            
-            # Welke apps horen bij deze role?
-            apps_in_role = []
-            for app in self.data['business_apps']:
-                app_id = app.get('cdm', {}).get('identification', {}).get('id')
-                app_provider = app.get('cdm', {}).get('identification', {}).get('providerId')
-                if app_provider == provider:
-                    apps_in_role.append(app_id)
+                    role_id = role.get('cdm', {}).get('identification', {}).get('id')
+                    provider = role.get('cdm', {}).get('identification', {}).get('providerId')
+                    
+                    apps_in_role = []
+                    
+                    for app in self.data['business_apps']:
+                        app_id = app.get('cdm', {}).get('identification', {}).get('id')
+                        
+                        app_relations = app.get('cdm', {}).get('relations', {}).get('roles', [])
+                        
+                        for rel_role in app_relations:
+                            target_id = rel_role.get('target', {}).get('id')
+                            if target_id == role_id:
+                                apps_in_role.append(app_id)
+                                break 
+                    
+                    if not apps_in_role:
+                        apps_in_role = role.get('cdm', {}).get('relations', {}).get('apps', [])
+                        if apps_in_role and isinstance(apps_in_role[0], dict):
+                            apps_in_role = [a.get('target', {}).get('id') for a in apps_in_role]
 
-            report["roles_analysis"].append({
-                "role_id": role_id,
-                "provider_id": provider,
-                "app_count": len(apps_in_role),
-                "apps": apps_in_role
-            })
+                    report["roles_analysis"].append({
+                        "role_id": role_id,
+                        "provider_id": provider,
+                        "app_count": len(apps_in_role),
+                        "apps": apps_in_role
+                    })
 
-        # 5. Stats
         report["statistics"] = {
             "total_spaces": len(self.data['spaces']),
             "total_workpages": len(self.data['workpages']),
