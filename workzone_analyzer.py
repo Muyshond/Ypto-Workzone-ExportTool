@@ -1,8 +1,5 @@
 #!/usr/bin/env python3
-"""
-SAP Workzone Export Analyzer
-Unzipt en analyseert SAP Workzone export bestanden
-"""
+
 
 import zipfile
 import json

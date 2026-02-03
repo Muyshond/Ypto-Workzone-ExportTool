@@ -1,0 +1,398 @@
+{
+  "export_info": {
+    "date": "Tue Feb 03 2026 08:58:00 GMT+0000 (Coordinated Universal Time)",
+    "exported_by": "EXV173",
+    "product": "LAUNCHPAD",
+    "version": "1.82.0",
+    "provider_ids": [
+      "DS4_110",
+      "be.nmbs.scm.zovpkg2",
+      "be.nmbs.scm.zovpkg",
+      "be.nmbs.scm.cardpkg",
+      "saas_approuter"
+    ]
+  },
+  "spaces": [
+    {
+      "id": "fcb549ba-2c8d-4983-a1d0-c8bc247c149e",
+      "title": null,
+      "sort_number": null,
+      "description": null
+    }
+  ],
+  "pages": [
+    {
+      "id": "18b140a5-630d-4f1c-80e4-16702afc4c13",
+      "title": "Planner",
+      "description": "",
+      "spaces": [],
+      "apps": [
+        {
+          "viz_id": "gbx_0D6EB5511EA3B7334E8190B6BB78DF5D#008Y17F6AD9DN5414LTUOAPRX",
+          "app_name": "gbx_0D6EB5511EA3B7334E8190B6BB78DF5D"
+        },
+        {
+          "viz_id": "gbx_01150F0C4A07A19AF60F04B706FB8897#008Y17F6A7SIOHG84I626OOP6",
+          "app_name": "gbx_01150F0C4A07A19AF60F04B706FB8897"
+        },
+        {
+          "viz_id": "gbx_A9531964A6C2A70DFDD2D777CC743502#008Y17F6AD9DZDFCQJ0C6CPCM",
+          "app_name": "gbx_A9531964A6C2A70DFDD2D777CC743502"
+        }
+      ]
+    },
+    {
+      "id": "29c85ea1-245c-4286-a70e-308900c680c6",
+      "title": "Trainmanager",
+      "description": "",
+      "spaces": [],
+      "apps": [
+        {
+          "viz_id": "303d0e01-17d3-4850-a8fb-032a635b3344#Default-VizId",
+          "app_name": "303d0e01-17d3-4850-a8fb-032a635b3344"
+        }
+      ]
+    },
+    {
+      "id": "31d0dc3b-909f-4e15-a26e-627d940c5247",
+      "title": "Supply Chain",
+      "description": "",
+      "spaces": [],
+      "apps": [
+        {
+          "viz_id": "be.nmbs.btc.helios_be.nmbs.btc.helios.helpcard.app#be.nmbs.btc.helios.helpcard.viz",
+          "app_name": "be.nmbs.btc.helios.helpcard.app"
+        },
+        {
+          "viz_id": "be.nmbs.scm.cardpkg_be.nmbs.scm.zscmcustomcard.app#be.nmbs.scm.zscmcustomcard.viz",
+          "app_name": "be.nmbs.scm.zscmcustomcard.app"
+        },
+        {
+          "viz_id": "ds4_110_14AF994BDE3FC8AF43FAFA2DEA444C5B#42010AEE28151EEBAFDEC4E5FF7193B7",
+          "app_name": "110_14AF994BDE3FC8AF43FAFA2DEA444C5B"
+        },
+        {
+          "viz_id": "be.nmbs.scm.zovpkg2_be.nmbs.scm.zscmov.app#be.nmbs.scm.zscmov.viz",
+          "app_name": "be.nmbs.scm.zscmov.app"
+        },
+        {
+          "viz_id": "be.nmbs.testpckge_be.nmbs.test.integratiosn.card.ztestdatacard.app#be.nmbs.test.integratiosn.card.ztestdatacard.viz",
+          "app_name": "be.nmbs.test.integratiosn.card.ztestdatacard.app"
+        }
+      ]
+    },
+    {
+      "id": "8c865f70-1382-4d35-88a3-c1511dd40fd9",
+      "title": "Material Governance",
+      "description": "",
+      "spaces": [],
+      "apps": [
+        {
+          "viz_id": "gbx_002DB804774A5F7D7C723F25BF07151E#008Y17F6AD9DJH8F1YHK4AOZ7",
+          "app_name": "gbx_002DB804774A5F7D7C723F25BF07151E"
+        },
+        {
+          "viz_id": "gbx_C1D9EA8DB0530B4596E7E745B5990BB1#008Y17F6AD9DJH8EXMIMH75KJ",
+          "app_name": "gbx_C1D9EA8DB0530B4596E7E745B5990BB1"
+        },
+        {
+          "viz_id": "gbx_7B0D88E767807F718472EF73DBE261ED#008Y17F6AD9DJH8DQSQFUJ6CZ",
+          "app_name": "gbx_7B0D88E767807F718472EF73DBE261ED"
+        },
+        {
+          "viz_id": "gbx_8172F425C9352C96F0203706DC57E93B#008Y17F6AD9DJH8D9H8RF8A9F",
+          "app_name": "gbx_8172F425C9352C96F0203706DC57E93B"
+        },
+        {
+          "viz_id": "gbx_8E887C219FFAEDE1FCF3BD7C7F7DB85D#008Y17F69WUSB6DI7BT74C7HQ",
+          "app_name": "gbx_8E887C219FFAEDE1FCF3BD7C7F7DB85D"
+        },
+        {
+          "viz_id": "gbx_0C0EBFD16DCDE352964540870A3D4F12#008Y17F6A7SISOITKU1TMK207",
+          "app_name": "gbx_0C0EBFD16DCDE352964540870A3D4F12"
+        }
+      ]
+    },
+    {
+      "id": "9cc74cb2-b79b-4b28-abb3-d07b3a4618b4",
+      "title": "Operational",
+      "description": "",
+      "spaces": [],
+      "apps": [
+        {
+          "viz_id": "gbx_20E11BB3B6C05F962FEC8B20467E58A7#008Y17F6AD9DUOMS75F0BNQJ8",
+          "app_name": "gbx_20E11BB3B6C05F962FEC8B20467E58A7"
+        },
+        {
+          "viz_id": "gbx_01C094588A945985176678B667C96FF3#008Y17F6AD9DZ66M2SQCG1RGV",
+          "app_name": "gbx_01C094588A945985176678B667C96FF3"
+        },
+        {
+          "viz_id": "gbx_85A49AE69DED78813F509CBB0F985427#008Y17F6AD9DUPTMSS0OQ4YDW",
+          "app_name": "gbx_85A49AE69DED78813F509CBB0F985427"
+        },
+        {
+          "viz_id": "gbx_CDDFBA7E34B0DB3119953D1628BD20E6#008Y17F6AD9DUOUF1CMYL4RH0",
+          "app_name": "gbx_CDDFBA7E34B0DB3119953D1628BD20E6"
+        },
+        {
+          "viz_id": "gbx_16B650C759F1AAC51C9E3BEA5F840992#008Y17F6AD9DYURYCCO070HTQ",
+          "app_name": "gbx_16B650C759F1AAC51C9E3BEA5F840992"
+        },
+        {
+          "viz_id": "gbx_916ECC9E34704499EF0AECBE8762A461#008Y17F6AD9DYURXIL9UC205A",
+          "app_name": "gbx_916ECC9E34704499EF0AECBE8762A461"
+        },
+        {
+          "viz_id": "gbx_FBA6C3747BEF2A82041DD14CA5032127#008Y17F6AD9DZ66M12Z9UP6XB",
+          "app_name": "gbx_FBA6C3747BEF2A82041DD14CA5032127"
+        },
+        {
+          "viz_id": "gbx_96073F58BEC2A14865009C7DF7BC2DEA#008Y17F6AD9DUPTMYS8L6B3MC",
+          "app_name": "gbx_96073F58BEC2A14865009C7DF7BC2DEA"
+        },
+        {
+          "viz_id": "gbx_F564536258B2727ED592C7B934C6D8D3#008Y17F6AD9DUPTMQ26J1RBPW",
+          "app_name": "gbx_F564536258B2727ED592C7B934C6D8D3"
+        },
+        {
+          "viz_id": "gbx_E3802565FD875736561ECD3775386DD9#008Y17F6AD9DUOMS6JBXF1KIC",
+          "app_name": "gbx_E3802565FD875736561ECD3775386DD9"
+        },
+        {
+          "viz_id": "5a82b3af-9bf4-4ace-b7dd-162d44fc7c6b#Default-VizId",
+          "app_name": "5a82b3af-9bf4-4ace-b7dd-162d44fc7c6b"
+        }
+      ]
+    },
+    {
+      "id": "b37bf117-dd0f-4132-acc6-61d79a8a1865",
+      "title": "Scanner-TEST",
+      "description": "",
+      "spaces": [],
+      "apps": [
+        {
+          "viz_id": "saas_approuter_be.nmbs.scanner#Scanner-demo",
+          "app_name": "approuter_be.nmbs.scanner"
+        }
+      ]
+    },
+    {
+      "id": "d186f51f-3bd8-4e44-9758-04c4aaec32cf",
+      "title": "Quality",
+      "description": "",
+      "spaces": [],
+      "apps": [
+        {
+          "viz_id": "gbx_12E114AAED8C36519A9BA85BD6F948DF#008Y17F6AD9DRIW5XQT5ZTGR2",
+          "app_name": "gbx_12E114AAED8C36519A9BA85BD6F948DF"
+        },
+        {
+          "viz_id": "gbx_6B1592889549DFF7EEDBD3352693FD70#008Y17F6AD9DRJB5XW5WDU80E",
+          "app_name": "gbx_6B1592889549DFF7EEDBD3352693FD70"
+        }
+      ]
+    },
+    {
+      "id": "f2cb06bf-1d79-4382-8436-59b4f46f439d",
+      "title": "Materiel Roulant",
+      "description": "",
+      "spaces": [],
+      "apps": [
+        {
+          "viz_id": "gbx_6D0959594E3C881AA87709585C9F0CD2#008Y17F6AD9DUOAZHNVSKZW2C",
+          "app_name": "gbx_6D0959594E3C881AA87709585C9F0CD2"
+        },
+        {
+          "viz_id": "gbx_A53D05D3C7145E2D9963BF4C834C1FF6#008Y17F6AD9DUOAZD4NFJ5ZBO",
+          "app_name": "gbx_A53D05D3C7145E2D9963BF4C834C1FF6"
+        },
+        {
+          "viz_id": "gbx_43268130AA71A0E1F7D85E039CB2A6C7#008Y17F6AD9DUOAZBPEVI50R8",
+          "app_name": "gbx_43268130AA71A0E1F7D85E039CB2A6C7"
+        }
+      ]
+    }
+  ],
+  "apps": [
+    {
+      "id": "303d0e01-17d3-4850-a8fb-032a635b3344",
+      "title": "WebApps Trainmanagers",
+      "provider_id": null,
+      "type": "custom",
+      "created_by": "Wouter Lemaire",
+      "updated_by": "Wouter Lemaire",
+      "pages": [
+        "Trainmanager"
+      ],
+      "spaces": []
+    },
+    {
+      "id": "saas_approuter_be.nmbs.scanner",
+      "title": "scanner",
+      "provider_id": "saas_approuter",
+      "type": "extended",
+      "created_by": "Frederik Jooken",
+      "updated_by": "Frederik Jooken",
+      "pages": [
+        "Scanner-TEST"
+      ],
+      "spaces": []
+    },
+    {
+      "id": "saas_approuter_be.nmbs.scm.zscmusersettings",
+      "title": "zscmusersettings",
+      "provider_id": "saas_approuter",
+      "type": "extended",
+      "created_by": "Frederik Jooken",
+      "updated_by": "Frederik Jooken",
+      "pages": [],
+      "spaces": []
+    },
+    {
+      "id": "saas_approuter_be.nmbs.scm.zscmputaway",
+      "title": "zscmputaway",
+      "provider_id": "saas_approuter",
+      "type": "extended",
+      "created_by": "Frederik Jooken",
+      "updated_by": "Frederik Jooken",
+      "pages": [],
+      "spaces": []
+    },
+    {
+      "id": "saas_approuter_be.nmbs.scm.zscmspotinventory",
+      "title": "zscmspotinventory",
+      "provider_id": "saas_approuter",
+      "type": "extended",
+      "created_by": "Frederik Jooken",
+      "updated_by": "Frederik Jooken",
+      "pages": [],
+      "spaces": []
+    },
+    {
+      "id": "saas_approuter_be.nmbs.scm.zscmpicking",
+      "title": "zscmpicking",
+      "provider_id": "saas_approuter",
+      "type": "extended",
+      "created_by": "Frederik Jooken",
+      "updated_by": "Frederik Jooken",
+      "pages": [],
+      "spaces": []
+    },
+    {
+      "id": "saas_approuter_be.nmbs.scm.zscmgoodsreceipt",
+      "title": "zscmgoodsreceipt",
+      "provider_id": "saas_approuter",
+      "type": "extended",
+      "created_by": "Frederik Jooken",
+      "updated_by": "Frederik Jooken",
+      "pages": [],
+      "spaces": []
+    },
+    {
+      "id": "saas_approuter_be.nmbs.scm.zscmmanualmove",
+      "title": "zscmmanualmove",
+      "provider_id": "saas_approuter",
+      "type": "extended",
+      "created_by": "Frederik Jooken",
+      "updated_by": "Frederik Jooken",
+      "pages": [],
+      "spaces": []
+    },
+    {
+      "id": "5a82b3af-9bf4-4ace-b7dd-162d44fc7c6b",
+      "title": "UIC Messages",
+      "provider_id": null,
+      "type": "custom",
+      "created_by": "Gilles Muyshondt",
+      "updated_by": "Gilles Muyshondt",
+      "pages": [
+        "Operational"
+      ],
+      "spaces": []
+    },
+    {
+      "id": "saas_approuter_be.nmbs.scm.zscmcycleinventory",
+      "title": "zscmcycleinventory",
+      "provider_id": "saas_approuter",
+      "type": "extended",
+      "created_by": "Frederik Jooken",
+      "updated_by": "Frederik Jooken",
+      "pages": [],
+      "spaces": []
+    }
+  ],
+  "roles": [
+    {
+      "id": "~ds4_110_DS4_FIOA_ALLA_SCMXXX",
+      "provider_id": "DS4_110",
+      "extends": "~ds4_110_DS4_FIOA_ALLA_SCMXXX",
+      "created_by": "Frederik Jooken",
+      "updated_by": "Frederik Jooken",
+      "related_pages": [],
+      "related_visualizations": [],
+      "note": "Geen visualizations gevonden met deze provider"
+    },
+    {
+      "id": "~be.nmbs.scm.zovpkg2_be.nmbs.scm.zscmovervizscmovew2.tilerole",
+      "provider_id": "be.nmbs.scm.zovpkg2",
+      "extends": "~be.nmbs.scm.zovpkg2_be.nmbs.scm.zscmovervizscmovew2.tilerole",
+      "created_by": "sysUser",
+      "updated_by": "sysUser",
+      "related_pages": [
+        "Supply Chain"
+      ],
+      "related_visualizations": [
+        {
+          "page": "Supply Chain",
+          "viz_id": "be.nmbs.scm.zovpkg2_be.nmbs.scm.zscmov.app#be.nmbs.scm.zscmov.viz",
+          "app_name": "be.nmbs.scm.zscmov.app"
+        }
+      ],
+      "note": "Gevonden via provider matching in 1 visualizations"
+    },
+    {
+      "id": "~be.nmbs.scm.zovpkg_be.nmbs.scm.zscmoverview.tilerole",
+      "provider_id": "be.nmbs.scm.zovpkg",
+      "extends": "~be.nmbs.scm.zovpkg_be.nmbs.scm.zscmoverview.tilerole",
+      "created_by": "Wouter Lemaire",
+      "updated_by": "Wouter Lemaire",
+      "related_pages": [
+        "Supply Chain"
+      ],
+      "related_visualizations": [
+        {
+          "page": "Supply Chain",
+          "viz_id": "be.nmbs.scm.zovpkg2_be.nmbs.scm.zscmov.app#be.nmbs.scm.zscmov.viz",
+          "app_name": "be.nmbs.scm.zscmov.app"
+        }
+      ],
+      "note": "Gevonden via provider matching in 1 visualizations"
+    },
+    {
+      "id": "~be.nmbs.scm.cardpkg_be.nmbs.scm.zscmcustomcard.tilerole",
+      "provider_id": "be.nmbs.scm.cardpkg",
+      "extends": "~be.nmbs.scm.cardpkg_be.nmbs.scm.zscmcustomcard.tilerole",
+      "created_by": "Wouter Lemaire",
+      "updated_by": "Wouter Lemaire",
+      "related_pages": [
+        "Supply Chain"
+      ],
+      "related_visualizations": [
+        {
+          "page": "Supply Chain",
+          "viz_id": "be.nmbs.scm.cardpkg_be.nmbs.scm.zscmcustomcard.app#be.nmbs.scm.zscmcustomcard.viz",
+          "app_name": "be.nmbs.scm.zscmcustomcard.app"
+        }
+      ],
+      "note": "Gevonden via provider matching in 1 visualizations"
+    }
+  ],
+  "statistics": {
+    "total_spaces": 1,
+    "total_pages": 8,
+    "total_apps": 10,
+    "total_roles": 4,
+    "total_visualizations": 32
+  }
+}
