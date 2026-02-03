@@ -104,10 +104,13 @@ class WorkzoneAnalyzer:
                 viz_ids = wp_viz_map.get(wp_id, [])
                 all_referenced_viz.update(viz_ids)
 
+                #verwijder alles na de #, anders sommige ids niet valid en dus moeilijker om op te zoeken. Als dit error geeft, verwijder 2 onderste lijnen.
+                cleaned_viz_ids = [vid.split('#')[0] for vid in viz_ids]
+                all_referenced_viz.update(cleaned_viz_ids)
                 space_node["pages"].append({
                     "page_title": wp_details.get('mergedEntity', {}).get('descriptor', {}).get('value', {}).get('title', wp_id),
                     "page_id": wp_id,
-                    "visualizations": viz_ids
+                    "visualizations": cleaned_viz_ids
                 })
             
             report["structure"].append(space_node)
