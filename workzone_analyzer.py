@@ -102,7 +102,7 @@ class WorkzoneAnalyzer:
                 space_node["pages"].append({
                     "page_title": wp_details.get('mergedEntity', {}).get('descriptor', {}).get('value', {}).get('title', wp_id),
                     "page_id": wp_id,
-                    "visualizations": cleaned_viz_ids
+                    "apps": cleaned_viz_ids
                 })
             
             report["structure"].append(space_node)
