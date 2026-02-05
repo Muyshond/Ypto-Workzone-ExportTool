@@ -1,9 +1,8 @@
 {
   "statistics": {
-    "total_spaces": 70,
-    "total_workpages": 154,
-    "total_business_apps": 99,
-    "total_roles": 96
+    "total_spaces": 14,
+    "total_roles": 96,
+    "total_apps": 99
   },
   "structure": [
     {
@@ -1005,77 +1004,102 @@
       ]
     }
   ],
-  "orphan_apps": [],
   "roles_analysis": [
     {
       "role_id": "~ds4_110_DS4_FIOA_ALLA_P2MAXX",
       "provider_id": "DS4_110",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~ds4_110_DS4_FIOA_ALLA_S2PXXX",
       "provider_id": "DS4_110",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~ds4_110_DS4_FIOA_ALLA_SCMXXX",
       "provider_id": "DS4_110",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_BTWX_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_SDOA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~ds4_110_DS4_FIOA_DEVA_TEMP",
       "provider_id": "DS4_110",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~ds4_110_DS4_FIOA_ALLA_R2RXXX",
       "provider_id": "DS4_110",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~ds4_110_DS4_FIOA_ALLA_H2RXXX",
       "provider_id": "DS4_110",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~ds4_110_DS4_FIOA_ALLA_MFPXXX",
       "provider_id": "DS4_110",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~ds4_110_DS4_FIOA_ALLA_O2CXXX",
       "provider_id": "DS4_110",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "WZ_LOCAL_ALL_SPACES",
       "provider_id": null,
       "app_count": 4,
       "apps": [
-        "saas_approuter_be.nmbs.plugins.laserscanningplugin",
         "saas_approuter_be.nmbs.plugins.wzanalyticspluginshellapp",
         "saas_approuter_be.nmbs.plugins.wzdeactivatehome",
+        "saas_approuter_be.nmbs.plugins.laserscanningplugin",
         "saas_approuter_be.nmbs.wzpluginlanguageswitch"
+      ],
+      "spaces": [
+        "291fbc7c-6b44-484b-bc38-99b330f47911",
+        "c4b665b8-ac51-49a8-9a58-a3e1136788bd",
+        "8f093ba8-94f3-4e7b-a3c9-8cce7daba59b",
+        "699761df-ba3f-4efb-b0ae-b76cdb37d1da",
+        "c82dddf6-823e-4e9f-913a-b5e669662f4f",
+        "ad58488e-fc53-4645-8253-491ed828fa94",
+        "cc9ed476-363d-44a9-b749-57a956e753b7",
+        "89fa406f-2c39-4f2e-8b00-d51bd7bce0cc",
+        "fcb549ba-2c8d-4983-a1d0-c8bc247c149e",
+        "72c20317-3c19-4753-8cc8-8cd07c18700f",
+        "4eb4144d-bfb0-414e-9743-f0f4bbab3db8",
+        "f84fac2e-480f-47f6-a27f-62ec833a6472",
+        "1b00e09d-4f31-4e14-9797-e8365c19d177",
+        "bc24749b-9e81-4b97-9f13-73db523bd188"
       ]
     },
     {
@@ -1084,100 +1108,107 @@
       "app_count": 9,
       "apps": [
         "saas_approuter_be.nmbs.scanner",
+        "saas_approuter_be.nmbs.scm.zscmgoodsreceipt",
+        "saas_approuter_be.nmbs.scm.zscmcycleinventory",
+        "saas_approuter_be.nmbs.scm.zscmusersettings",
         "saas_approuter_be.nmbs.scm.zscmpicking",
         "saas_approuter_be.nmbs.plugins.laserscanningplugin",
+        "saas_approuter_be.nmbs.scm.zscmmanualmove",
         "saas_approuter_be.nmbs.scm.zscmputaway",
-        "saas_approuter_be.nmbs.scm.zscmusersettings",
-        "saas_approuter_be.nmbs.scm.zscmcycleinventory",
-        "saas_approuter_be.nmbs.scm.zscmspotinventory",
-        "saas_approuter_be.nmbs.scm.zscmgoodsreceipt",
-        "saas_approuter_be.nmbs.scm.zscmmanualmove"
-      ]
+        "saas_approuter_be.nmbs.scm.zscmspotinventory"
+      ],
+      "spaces": []
     },
     {
       "role_id": "WZ_LOCAL_EMM_BTC",
       "provider_id": null,
       "app_count": 13,
       "apps": [
-        "saas_approuter_be.nmbs.plugins.nfcscanning",
-        "saas_approuter_Chronos",
-        "saas_approuter_zopsafterdetail",
         "saas_approuter_matconmaster",
-        "saas_approuter_area51.Area51",
-        "saas_approuter_zopsnotif",
-        "saas_approuter_NFCManagement",
+        "saas_approuter_be.nmbs.plugins.nfcscanning",
         "saas_approuter_userParameters",
+        "saas_approuter_NFCManagement",
         "saas_approuter_Validation.validation",
+        "saas_approuter_zopsafterdetail",
+        "saas_approuter_be.nmbs.zopsprogress",
+        "saas_approuter_Chronos",
         "saas_approuter_zopsafter",
         "saas_approuter_be.nmbs.metrix",
-        "saas_approuter_be.nmbs.zopsprogress",
-        "saas_approuter_be.nmbs.sapstartredirect"
+        "saas_approuter_area51.Area51",
+        "saas_approuter_be.nmbs.sapstartredirect",
+        "saas_approuter_zopsnotif"
+      ],
+      "spaces": [
+        "8f093ba8-94f3-4e7b-a3c9-8cce7daba59b"
       ]
     },
     {
       "role_id": "~be.nmbs.scm.zovpkg2_be.nmbs.scm.zscmovervizscmovew2.tilerole",
       "provider_id": "be.nmbs.scm.zovpkg2",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~be.nmbs.scm.zovpkg_be.nmbs.scm.zscmoverview.tilerole",
       "provider_id": "be.nmbs.scm.zovpkg",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "WZ_LOCAL_BIHR_PAOM_XXXXX",
       "provider_id": null,
       "app_count": 46,
       "apps": [
-        "19241a7b-39a4-441f-9b50-e4a587ea7440",
-        "384613d5-6dca-42f4-b704-3b7e6b5ebe8c",
-        "3f070b20-ced7-4d5b-bbcb-633672d478ea",
-        "eb235f28-58a8-42a8-8263-3963eff3c2b8",
-        "b5117637-81d3-4700-b251-0c1c03e5d286",
-        "f2b95179-74f5-4900-a17d-bb0c04670d32",
-        "6fac1034-b5e8-4736-b941-1370f432870d",
-        "78700bbd-65ea-41f4-8276-479fac32c6ca",
-        "16172530-8e70-4c92-b263-d641b7947e82",
-        "0cd501e6-dbb1-4484-bb15-535847b8cb7d",
-        "f1872bcb-2e0e-4f45-b5ec-1c930e083af4",
-        "fd1539bc-7508-439c-8c52-b0068038c38f",
-        "f441f31b-0960-44e1-a768-57f8a42dd6ae",
-        "564ebc20-fd72-450b-9192-db101c79d791",
-        "048bf286-7c66-445c-85e8-0bfdd97da4a6",
-        "3814945a-d60a-4f6d-bd83-251f0aa942ba",
-        "024aef62-6513-4956-a72e-c4bea7c92237",
-        "bb8984bb-141f-48a2-8cd8-46c7545c8cda",
-        "e69565ab-8bbf-4729-ab94-a558cb8f94a5",
-        "92433bc1-d2cf-4bc1-a476-cc73a6a971f5",
-        "18fcb20c-e2b4-4e41-8e59-a4e9d711c7f7",
-        "9cc6c9bd-f675-4d15-b2b7-2ef2c1c07e29",
         "7499afa8-bd6c-4673-a571-076dd5e53ee5",
-        "031c2608-f288-462b-8119-f7b8ba5b65eb",
-        "c82eb61d-3283-4714-9617-791563f8c20f",
-        "68aa9bc8-c3b4-4ede-9ba4-add2f1b890db",
-        "a3190dc7-6cef-401b-b36f-d0cd6edf5054",
-        "fd96d773-1efc-46c8-9572-8cc8fd9c6c88",
-        "3ffaecf4-1526-4f05-a0ad-735e7db6762d",
-        "a26b6fb4-c4e3-4829-b895-4961d4a6f926",
-        "5ecb73ae-2962-4094-981a-20c65f246d75",
-        "953c7a9a-3fb0-44ae-96b2-6ab951351140",
-        "ec533e1f-2da1-4572-8452-cf0cbbec13dc",
-        "1a346cc7-7068-48f4-a70b-b6171302f801",
-        "ab5ec544-7565-4033-ad94-3c41b255a5fe",
-        "2cfa30b4-676c-468e-a60b-8db39dca0f27",
+        "bb8984bb-141f-48a2-8cd8-46c7545c8cda",
+        "564ebc20-fd72-450b-9192-db101c79d791",
+        "3f070b20-ced7-4d5b-bbcb-633672d478ea",
+        "7b92ed76-74a5-409f-a605-e1ad38643bb5",
+        "19241a7b-39a4-441f-9b50-e4a587ea7440",
         "bc8128ec-ce99-4f73-9ab6-6b38c831d57f",
         "20561ffa-43b4-4277-b2a7-7ae5897dda03",
-        "012758e0-ef83-4843-8611-4f9f0e79c0e1",
-        "527dbb1d-5e90-4c76-af5b-450039a490ca",
-        "7b92ed76-74a5-409f-a605-e1ad38643bb5",
+        "a26b6fb4-c4e3-4829-b895-4961d4a6f926",
+        "024aef62-6513-4956-a72e-c4bea7c92237",
+        "384613d5-6dca-42f4-b704-3b7e6b5ebe8c",
+        "5ecb73ae-2962-4094-981a-20c65f246d75",
+        "f1872bcb-2e0e-4f45-b5ec-1c930e083af4",
+        "ab5ec544-7565-4033-ad94-3c41b255a5fe",
+        "f2b95179-74f5-4900-a17d-bb0c04670d32",
         "e275e3d8-c45b-4cab-91c3-e4447b8520af",
+        "1a346cc7-7068-48f4-a70b-b6171302f801",
+        "c82eb61d-3283-4714-9617-791563f8c20f",
+        "527dbb1d-5e90-4c76-af5b-450039a490ca",
+        "16172530-8e70-4c92-b263-d641b7947e82",
+        "048bf286-7c66-445c-85e8-0bfdd97da4a6",
+        "fd96d773-1efc-46c8-9572-8cc8fd9c6c88",
         "477d2f4d-293b-4877-9c53-c6f0e640befa",
+        "92433bc1-d2cf-4bc1-a476-cc73a6a971f5",
+        "6fac1034-b5e8-4736-b941-1370f432870d",
+        "031c2608-f288-462b-8119-f7b8ba5b65eb",
+        "f441f31b-0960-44e1-a768-57f8a42dd6ae",
+        "953c7a9a-3fb0-44ae-96b2-6ab951351140",
+        "3ffaecf4-1526-4f05-a0ad-735e7db6762d",
         "303d0e01-17d3-4850-a8fb-032a635b3344",
+        "e69565ab-8bbf-4729-ab94-a558cb8f94a5",
+        "012758e0-ef83-4843-8611-4f9f0e79c0e1",
+        "fd1539bc-7508-439c-8c52-b0068038c38f",
+        "2cfa30b4-676c-468e-a60b-8db39dca0f27",
         "5a82b3af-9bf4-4ace-b7dd-162d44fc7c6b",
-        "1ff6660f-b731-4aa3-96ad-d96ca347341c"
-      ]
+        "78700bbd-65ea-41f4-8276-479fac32c6ca",
+        "3814945a-d60a-4f6d-bd83-251f0aa942ba",
+        "ec533e1f-2da1-4572-8452-cf0cbbec13dc",
+        "0cd501e6-dbb1-4484-bb15-535847b8cb7d",
+        "9cc6c9bd-f675-4d15-b2b7-2ef2c1c07e29",
+        "68aa9bc8-c3b4-4ede-9ba4-add2f1b890db",
+        "eb235f28-58a8-42a8-8263-3963eff3c2b8",
+        "1ff6660f-b731-4aa3-96ad-d96ca347341c",
+        "b5117637-81d3-4700-b251-0c1c03e5d286",
+        "a3190dc7-6cef-401b-b36f-d0cd6edf5054",
+        "18fcb20c-e2b4-4e41-8e59-a4e9d711c7f7"
+      ],
+      "spaces": []
     },
     {
       "role_id": "MyPay_role",
@@ -1185,460 +1216,538 @@
       "app_count": 1,
       "apps": [
         "e0f2f204-b0a9-4e80-bead-1bcff62e358e"
-      ]
+      ],
+      "spaces": []
     },
     {
       "role_id": "~be.nmbs.scm.cardpkg_be.nmbs.scm.zscmcustomcard.tilerole",
       "provider_id": "be.nmbs.scm.cardpkg",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~be.nmbs.testpckge_be.nmbs.test.integratiosn.package",
       "provider_id": "be.nmbs.testpckge",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_VIMC_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_613X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_HRXS_FTCL_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~be.nmbs.cards.nmbs_be.nmbs.cards.NumberTile.role1",
       "provider_id": "be.nmbs.cards.nmbs",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "WZ_LOCAL_HELIOS",
       "provider_id": null,
       "app_count": 11,
       "apps": [
-        "96956100-5815-453e-aadd-f1b88532522e",
-        "cb9ba99d-5c6c-48eb-83fc-8b4cae98d856",
-        "22ad4c98-ff24-4313-9357-b34a5b540603",
-        "ec43ba42-16bd-49a9-b996-03fe9aa6738e",
         "f5dd9541-a826-4551-819a-1ebb5c33bbe3",
-        "c08bf33c-f85e-4c29-886b-814ac0a0dd6a",
-        "5b39a632-2898-4001-898c-7863bd908388",
-        "19395605-6789-4542-becb-65999f1a64b2",
-        "fa033597-1cc7-412a-a5ec-0da2a0618b0d",
+        "22ad4c98-ff24-4313-9357-b34a5b540603",
         "cadba79f-f366-4b24-8b2d-55bade4904b0",
-        "cddd7f2c-15b8-415f-9423-696dd66d74de"
+        "19395605-6789-4542-becb-65999f1a64b2",
+        "96956100-5815-453e-aadd-f1b88532522e",
+        "5b39a632-2898-4001-898c-7863bd908388",
+        "c08bf33c-f85e-4c29-886b-814ac0a0dd6a",
+        "cb9ba99d-5c6c-48eb-83fc-8b4cae98d856",
+        "cddd7f2c-15b8-415f-9423-696dd66d74de",
+        "ec43ba42-16bd-49a9-b996-03fe9aa6738e",
+        "fa033597-1cc7-412a-a5ec-0da2a0618b0d"
+      ],
+      "spaces": [
+        "bc24749b-9e81-4b97-9f13-73db523bd188"
       ]
     },
     {
       "role_id": "~gbx_S4D_BIHR_COAC_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BIHR_PAOM_METAX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_QMTX_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BIHR_YOUT_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FRLP_BOPX_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_FOXA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOB_LFXA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FARK_ARKV_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_655X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_GRBC_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BIHR_FAWA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_APSL_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BIHR_TIME_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BCGN_FAWA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_LOCA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_HRXS_LRQA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_651X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_652X_TEMPX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_621X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_BIRP_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_PART_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_675X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BIHR_PAOM_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_TIME_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BIHR_PAYR_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BCGN_FAWA_MANXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_HRXS_CHTA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_NOTX_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BCGN_FADM_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_UICM_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_CSSF_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_757X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_71X0_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BCGN_BASA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_SENW_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_SNOW_HRXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_OCBX_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_LFXA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_03XX_CSSXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_793X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BIHR_STRI_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_GRBE_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BIHR_GDVL_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_458X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_605X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_INOU_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_652X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BIHR_QUAL_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_TECA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BCGN_TCLA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_623X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_LOXA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_GDVL_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_684X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_618X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BCGN_MDGA_REQXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_BCGN_MDGA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_301X_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOC_LFXA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_HRXS_DASA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_PAWA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_HRXS_QUOA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~be.nmbs.btc.helios_be.nmbs.btc.helios.helpcardpackage.role1",
       "provider_id": "be.nmbs.btc.helios",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_FIOA_ILRP_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "~gbx_S4D_HRXS_TMCA_XXXXX",
       "provider_id": "GBX",
       "app_count": 0,
-      "apps": []
+      "apps": [],
+      "spaces": []
     },
     {
       "role_id": "WZ_LOCAL_FDN_GENERAL",
       "provider_id": null,
       "app_count": 3,
       "apps": [
-        "saas_approuter_com.nmbs.nfcscanning",
         "saas_approuter_zopsmatconapp",
+        "saas_approuter_com.nmbs.nfcscanning",
         "saas_approuter_be.nmbs.plugins.nfcscanning.nfcscanningplugin"
+      ],
+      "spaces": [
+        "c4b665b8-ac51-49a8-9a58-a3e1136788bd"
       ]
     },
     {
@@ -1649,6 +1758,9 @@
         "sdm-web_com.sap.ecm.sdm.mobonboard",
         "sdm-web_com.sap.ecm.sdm.user",
         "sdm-web_com.sap.ecm.sdm.admin"
+      ],
+      "spaces": [
+        "c4b665b8-ac51-49a8-9a58-a3e1136788bd"
       ]
     },
     {
@@ -1657,6 +1769,9 @@
       "app_count": 1,
       "apps": [
         "sdm-web_com.sap.ecm.sdm.user"
+      ],
+      "spaces": [
+        "c4b665b8-ac51-49a8-9a58-a3e1136788bd"
       ]
     },
     {
@@ -1665,6 +1780,9 @@
       "app_count": 1,
       "apps": [
         "saas_approuter_be.nmbs.lean.board"
+      ],
+      "spaces": [
+        "c4b665b8-ac51-49a8-9a58-a3e1136788bd"
       ]
     },
     {
@@ -1672,12 +1790,15 @@
       "provider_id": null,
       "app_count": 6,
       "apps": [
+        "saas_approuter_be.nmbs.lean.projects",
         "saas_approuter_be.nmbs.lean.dstum",
         "sdm-web_com.sap.ecm.sdm.mobonboard",
         "sdm-web_com.sap.ecm.sdm.migration",
         "sdm-web_com.sap.ecm.sdm.user",
-        "sdm-web_com.sap.ecm.sdm.admin",
-        "saas_approuter_be.nmbs.lean.projects"
+        "sdm-web_com.sap.ecm.sdm.admin"
+      ],
+      "spaces": [
+        "c4b665b8-ac51-49a8-9a58-a3e1136788bd"
       ]
     },
     {
@@ -1685,8 +1806,11 @@
       "provider_id": null,
       "app_count": 2,
       "apps": [
-        "saas_approuter_zwmsinvcsintvns",
-        "ff83f39c-3822-4a0a-aef8-fe5e4a6632a3"
+        "ff83f39c-3822-4a0a-aef8-fe5e4a6632a3",
+        "saas_approuter_zwmsinvcsintvns"
+      ],
+      "spaces": [
+        "4eb4144d-bfb0-414e-9743-f0f4bbab3db8"
       ]
     },
     {
@@ -1695,6 +1819,9 @@
       "app_count": 1,
       "apps": [
         "saas_approuter_be.nmbs.zecmmywagons"
+      ],
+      "spaces": [
+        "ad58488e-fc53-4645-8253-491ed828fa94"
       ]
     }
   ]
