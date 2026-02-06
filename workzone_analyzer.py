@@ -279,7 +279,7 @@ class WorkzoneAnalyzer:
                 "type": "role",
                 "title": role_id.split('_')[-1] if '_' in role_id else role_id,
                 "fullId": role_id,
-                "providerId": provider_id,
+                "providerId": provider_id if provider_id else "BTP", # Updated logic here
                 "spaceCount": len(role_spaces),
                 "totalPages": sum(s["pageCount"] for s in role_spaces.values()),
                 "totalApps": total_apps + len(role_apps),
