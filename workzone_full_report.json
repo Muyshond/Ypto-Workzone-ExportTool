@@ -1010,6 +1010,7 @@
       "provider_id": "DS4_110",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1017,6 +1018,7 @@
       "provider_id": "DS4_110",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1024,6 +1026,7 @@
       "provider_id": "DS4_110",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1031,6 +1034,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1038,6 +1042,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1045,6 +1050,7 @@
       "provider_id": "DS4_110",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1052,6 +1058,7 @@
       "provider_id": "DS4_110",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1059,6 +1066,7 @@
       "provider_id": "DS4_110",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1066,6 +1074,7 @@
       "provider_id": "DS4_110",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1073,6 +1082,7 @@
       "provider_id": "DS4_110",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1085,6 +1095,7 @@
         "saas_approuter_be.nmbs.plugins.laserscanningplugin",
         "saas_approuter_be.nmbs.wzpluginlanguageswitch"
       ],
+      "space_count": 14,
       "spaces": [
         "291fbc7c-6b44-484b-bc38-99b330f47911",
         "c4b665b8-ac51-49a8-9a58-a3e1136788bd",
@@ -1117,6 +1128,7 @@
         "saas_approuter_be.nmbs.scm.zscmputaway",
         "saas_approuter_be.nmbs.scm.zscmspotinventory"
       ],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1138,6 +1150,7 @@
         "saas_approuter_be.nmbs.sapstartredirect",
         "saas_approuter_zopsnotif"
       ],
+      "space_count": 1,
       "spaces": [
         "8f093ba8-94f3-4e7b-a3c9-8cce7daba59b"
       ]
@@ -1147,6 +1160,7 @@
       "provider_id": "be.nmbs.scm.zovpkg2",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1154,6 +1168,7 @@
       "provider_id": "be.nmbs.scm.zovpkg",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1208,6 +1223,7 @@
         "a3190dc7-6cef-401b-b36f-d0cd6edf5054",
         "18fcb20c-e2b4-4e41-8e59-a4e9d711c7f7"
       ],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1217,6 +1233,7 @@
       "apps": [
         "e0f2f204-b0a9-4e80-bead-1bcff62e358e"
       ],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1224,6 +1241,7 @@
       "provider_id": "be.nmbs.scm.cardpkg",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1231,6 +1249,7 @@
       "provider_id": "be.nmbs.testpckge",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1238,6 +1257,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1245,6 +1265,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1252,6 +1273,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1259,6 +1281,7 @@
       "provider_id": "be.nmbs.cards.nmbs",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1278,6 +1301,7 @@
         "ec43ba42-16bd-49a9-b996-03fe9aa6738e",
         "fa033597-1cc7-412a-a5ec-0da2a0618b0d"
       ],
+      "space_count": 1,
       "spaces": [
         "bc24749b-9e81-4b97-9f13-73db523bd188"
       ]
@@ -1287,6 +1311,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1294,6 +1319,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1301,6 +1327,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1308,6 +1335,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1315,6 +1343,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1322,6 +1351,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1329,6 +1359,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1336,6 +1367,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1343,6 +1375,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1350,6 +1383,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1357,6 +1391,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1364,6 +1399,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1371,6 +1407,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1378,6 +1415,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1385,6 +1423,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1392,6 +1431,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1399,6 +1439,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1406,6 +1447,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1413,6 +1455,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1420,6 +1463,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1427,6 +1471,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1434,6 +1479,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1441,6 +1487,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1448,6 +1495,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1455,6 +1503,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1462,6 +1511,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1469,6 +1519,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1476,6 +1527,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1483,6 +1535,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1490,6 +1543,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1497,6 +1551,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1504,6 +1559,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1511,6 +1567,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1518,6 +1575,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1525,6 +1583,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1532,6 +1591,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1539,6 +1599,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1546,6 +1607,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1553,6 +1615,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1560,6 +1623,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1567,6 +1631,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1574,6 +1639,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1581,6 +1647,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1588,6 +1655,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1595,6 +1663,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1602,6 +1671,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1609,6 +1679,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1616,6 +1687,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1623,6 +1695,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1630,6 +1703,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1637,6 +1711,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1644,6 +1719,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1651,6 +1727,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1658,6 +1735,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1665,6 +1743,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1672,6 +1751,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1679,6 +1759,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1686,6 +1767,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1693,6 +1775,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1700,6 +1783,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1707,6 +1791,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1714,6 +1799,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1721,6 +1807,7 @@
       "provider_id": "be.nmbs.btc.helios",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1728,6 +1815,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1735,6 +1823,7 @@
       "provider_id": "GBX",
       "app_count": 0,
       "apps": [],
+      "space_count": 0,
       "spaces": []
     },
     {
@@ -1746,6 +1835,7 @@
         "saas_approuter_com.nmbs.nfcscanning",
         "saas_approuter_be.nmbs.plugins.nfcscanning.nfcscanningplugin"
       ],
+      "space_count": 1,
       "spaces": [
         "c4b665b8-ac51-49a8-9a58-a3e1136788bd"
       ]
@@ -1759,6 +1849,7 @@
         "sdm-web_com.sap.ecm.sdm.user",
         "sdm-web_com.sap.ecm.sdm.admin"
       ],
+      "space_count": 1,
       "spaces": [
         "c4b665b8-ac51-49a8-9a58-a3e1136788bd"
       ]
@@ -1770,6 +1861,7 @@
       "apps": [
         "sdm-web_com.sap.ecm.sdm.user"
       ],
+      "space_count": 1,
       "spaces": [
         "c4b665b8-ac51-49a8-9a58-a3e1136788bd"
       ]
@@ -1781,6 +1873,7 @@
       "apps": [
         "saas_approuter_be.nmbs.lean.board"
       ],
+      "space_count": 1,
       "spaces": [
         "c4b665b8-ac51-49a8-9a58-a3e1136788bd"
       ]
@@ -1797,6 +1890,7 @@
         "sdm-web_com.sap.ecm.sdm.user",
         "sdm-web_com.sap.ecm.sdm.admin"
       ],
+      "space_count": 1,
       "spaces": [
         "c4b665b8-ac51-49a8-9a58-a3e1136788bd"
       ]
@@ -1809,6 +1903,7 @@
         "ff83f39c-3822-4a0a-aef8-fe5e4a6632a3",
         "saas_approuter_zwmsinvcsintvns"
       ],
+      "space_count": 1,
       "spaces": [
         "4eb4144d-bfb0-414e-9743-f0f4bbab3db8"
       ]
@@ -1820,6 +1915,7 @@
       "apps": [
         "saas_approuter_be.nmbs.zecmmywagons"
       ],
+      "space_count": 1,
       "spaces": [
         "ad58488e-fc53-4645-8253-491ed828fa94"
       ]

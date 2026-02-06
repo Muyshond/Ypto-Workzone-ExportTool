@@ -28,7 +28,6 @@ class WorkzoneAnalyzer:
             return None
 
     def find_and_load_files(self, base_path):
-        """Zoekt generiek naar de juiste bestanden in de export structuur"""
         for root, _, files in os.walk(base_path):
             for file in files:
                 full_path = os.path.join(root, file)
@@ -127,6 +126,7 @@ class WorkzoneAnalyzer:
                 "provider_id": provider,
                 "app_count": len(apps_in_role),
                 "apps": apps_in_role, 
+                "space_count": len(spaces_in_role), 
                 "spaces": spaces_in_role
             })
 
@@ -136,6 +136,178 @@ class WorkzoneAnalyzer:
             "total_apps": len(self.data['business_apps'])
         }
         return report
+
+    def generate_ui5_hierarchy(self):
+        wp_viz_map = defaultdict(list)
+        for wp in self.data['workpages']:
+            if wp.get('language') == 'en':
+                wp_viz_map[wp.get('id')] = wp.get('workPageVizsId', [])
+
+        sp_wp_map = defaultdict(list)
+        wp_sp_map = {}
+        for rel in self.data['relations_sp_wp']:
+            sp_id = rel.get('spaceId')
+            wp_id = rel.get('workPageId')
+            sp_wp_map[sp_id].append(wp_id)
+            wp_sp_map[wp_id] = sp_id
+
+        space_details = {}
+        for sp in self.data['spaces']:
+            if sp.get('language') not in ['master', 'en']: 
+                continue
+            
+            sp_id = sp.get('id')
+            space_node = {
+                "id": sp_id,
+                "type": "space",
+                "title": sp.get('mergedEntity', {}).get('value', {}).get('title') or 
+                         sp.get('descriptor', {}).get('value', {}).get('title') or 
+                         'Unknown Space',
+                "pageCount": 0,
+                "appCount": 0,
+                "children": []
+            }
+
+            for wp_id in sp_wp_map.get(sp_id, []):
+                wp_details = next((w for w in self.data['workpages'] if w.get('id') == wp_id and w.get('language') == 'en'), None)
+                if not wp_details:
+                    continue
+                
+                viz_ids = wp_viz_map.get(wp_id, [])
+                cleaned_viz_ids = [vid.split('#')[0] for vid in viz_ids]
+
+                page_node = {
+                    "id": wp_id,
+                    "type": "page",
+                    "title": wp_details.get('mergedEntity', {}).get('descriptor', {}).get('value', {}).get('title', wp_id),
+                    "appCount": len(cleaned_viz_ids),
+                    "children": []
+                }
+
+                for app_id in cleaned_viz_ids:
+                    page_node["children"].append({
+                        "id": app_id,
+                        "type": "app",
+                        "title": app_id.split('_')[-1] if '_' in app_id else app_id,
+                        "fullId": app_id
+                    })
+
+                space_node["children"].append(page_node)
+                space_node["pageCount"] += 1
+                space_node["appCount"] += len(cleaned_viz_ids)
+            
+            space_details[sp_id] = space_node
+
+        roles_hierarchy = []
+        for role in self.data['roles']:
+            role_id = role.get('cdm', {}).get('identification', {}).get('id')
+            provider_id = role.get('cdm', {}).get('identification', {}).get('providerId')
+            
+            role_apps = []
+            role_spaces = {}
+            total_apps = 0
+
+            for app in self.data['business_apps']:
+                app_id = app.get('cdm', {}).get('identification', {}).get('id')
+                app_relations = app.get('cdm', {}).get('relations', {}).get('roles', [])
+                if any(r.get('target', {}).get('id') == role_id for r in app_relations):
+                    role_apps.append(app_id)
+
+            if role_id in self.data['direct_role_relations']:
+                direct_rels = self.data['direct_role_relations'][role_id]
+                space_ids = direct_rels.get('space', [])
+                
+                for a_id in direct_rels.get('businessapp', []):
+                    if a_id not in role_apps:
+                        role_apps.append(a_id)
+                
+                for space_id in space_ids:
+                    if space_id in space_details:
+                        role_spaces[space_id] = space_details[space_id].copy()
+                        total_apps += role_spaces[space_id]["appCount"]
+
+            if provider_id:
+                for wp in self.data['workpages']:
+                    if wp.get('language') != 'en':
+                        continue
+                    
+                    wp_id = wp.get('id')
+                    wp_title = wp.get('mergedEntity', {}).get('descriptor', {}).get('value', {}).get('title')
+                    viz_ids = wp.get('workPageVizsId', [])
+                    
+                    matched_apps = []
+                    for viz_id in viz_ids:
+                        if viz_id.startswith(provider_id + "_") or provider_id in viz_id:
+                            matched_apps.append(viz_id.split('#')[0])
+                    
+                    if matched_apps:
+                        space_id = wp_sp_map.get(wp_id)
+                        if space_id and space_id in space_details:
+                            if space_id not in role_spaces:
+                                role_spaces[space_id] = {
+                                    "id": space_id,
+                                    "type": "space",
+                                    "title": space_details[space_id]["title"],
+                                    "pageCount": 0,
+                                    "appCount": 0,
+                                    "children": []
+                                }
+                            
+                            page_node = {
+                                "id": wp_id,
+                                "type": "page",
+                                "title": wp_title,
+                                "appCount": len(matched_apps),
+                                "children": []
+                            }
+                            
+                            for app_id in matched_apps:
+                                page_node["children"].append({
+                                    "id": app_id,
+                                    "type": "app",
+                                    "title": app_id.split('_')[-1] if '_' in app_id else app_id,
+                                    "fullId": app_id
+                                })
+                                total_apps += 1
+                            
+                            role_spaces[space_id]["children"].append(page_node)
+                            role_spaces[space_id]["pageCount"] += 1
+                            role_spaces[space_id]["appCount"] += len(matched_apps)
+
+            role_node = {
+                "id": role_id,
+                "type": "role",
+                "title": role_id.split('_')[-1] if '_' in role_id else role_id,
+                "fullId": role_id,
+                "providerId": provider_id,
+                "spaceCount": len(role_spaces),
+                "totalPages": sum(s["pageCount"] for s in role_spaces.values()),
+                "totalApps": total_apps + len(role_apps),
+                "children": []
+            }
+            
+            for space in role_spaces.values():
+                role_node["children"].append(space)
+            
+            for app_id in role_apps:
+                role_node["children"].append({
+                    "id": app_id,
+                    "type": "app",
+                    "title": app_id.split('_')[-1] if '_' in app_id else app_id,
+                    "fullId": app_id
+                })
+            
+            roles_hierarchy.append(role_node)
+
+        return {
+            "roles": roles_hierarchy,
+            "statistics": {
+                "totalRoles": len(self.data['roles']),
+                "totalSpaces": len([s for s in self.data['spaces'] if s.get('language') in ['master', 'en']]),
+                "totalPages": len([w for w in self.data['workpages'] if w.get('language') == 'en']),
+                "totalApps": len(self.data['business_apps'])
+            }
+        }
 
 def main():
     if len(sys.argv) < 2:
@@ -149,9 +321,16 @@ def main():
     analyzer.find_and_load_files(extract_dir)
     
     report = analyzer.generate_report()
+    ui5_report = analyzer.generate_ui5_hierarchy()
 
     with open('workzone_full_report.json', 'w', encoding='utf-8') as f:
         json.dump(report, f, indent=2)
+    
+    with open('workzone_ui5_hierarchy.json', 'w', encoding='utf-8') as f:
+        json.dump(ui5_report, f, indent=2)
+    
+    print("Generated: workzone_full_report.json")
+    print("Generated: workzone_ui5_hierarchy.json")
 
 if __name__ == "__main__":
     main()
